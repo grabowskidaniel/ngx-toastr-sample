@@ -14,6 +14,7 @@
     "prettier:write-html": "prettier --write src/**/*.html",
     "prettier:write": "npm run prettier:write-ts && npm run prettier:write-scss && npm run prettier:write-html",
     "format:fix": "pretty-quick --staged",
+    "precommit": "run-s format:fix lint stylelint",
     "stylelint": "stylelint src/**/*.scss"
   },
   "private": true,
