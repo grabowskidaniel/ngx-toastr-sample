@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier:check": "prettier --check src/**/*.ts",
+    "format:fix": "pretty-quick --staged",
     "stylelint": "stylelint src/**/*.scss"
   },
   "private": true,
