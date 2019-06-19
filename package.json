@@ -9,6 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier:check": "prettier --check src/**/*.ts",
+    "prettier:write-ts": "prettier --write src/**/*.ts",
+    "prettier:write-scss": "prettier --write src/**/*.scss",
+    "prettier:write-html": "prettier --write src/**/*.html",
     "format:fix": "pretty-quick --staged",
     "stylelint": "stylelint src/**/*.scss"
   },
