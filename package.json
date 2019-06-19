@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prettier:check": "prettier --check src/**/*.ts",
+    "stylelint": "stylelint src/**/*.scss"
   },
   "private": true,
   "dependencies": {
