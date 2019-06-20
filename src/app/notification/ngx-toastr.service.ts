@@ -12,7 +12,8 @@ export class NgxToastrService {
     positionClass: 'toast-top-full-width',
     progressBar: true,
     closeButton: true,
-    disableTimeOut: true,
+    /* disableTimeOut: true, */
+    /* timeOut: 60000, */
     enableHtml: true
   };
 
@@ -25,7 +26,7 @@ export class NgxToastrService {
     );
     this.toastr.show(
       notification.message +
-        ' <b>negrito</b> sem negrito. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+        ' <b>negrito</b> sem negrito. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
       '',
       this.individualConfig,
       type
