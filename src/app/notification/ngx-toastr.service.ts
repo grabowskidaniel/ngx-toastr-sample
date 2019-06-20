@@ -15,21 +15,6 @@ export class NgxToastrService {
   };
 
   show(notification: Notification, type: string) {
-    /* this.toastr.show(notification.message, '', this.individualConfig, type); */
-
-    switch (type) {
-      case 'success':
-        this.toastr.success(notification.message, '', this.individualConfig);
-        break;
-      case 'error':
-        this.toastr.error(notification.message, '', this.individualConfig);
-        break;
-      case 'warning':
-        this.toastr.warning(notification.message, '', this.individualConfig);
-        break;
-      case 'info':
-        this.toastr.info(notification.message, '', this.individualConfig);
-        break;
-    }
+    this.toastr.show(notification.message, '', this.individualConfig, type);
   }
 }
