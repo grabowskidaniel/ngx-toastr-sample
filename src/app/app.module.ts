@@ -1,10 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from './app.component';
 
 const declarations = [AppComponent];
 
-const imports = [BrowserModule];
+const imports = [
+  CommonModule,
+  BrowserModule,
+  BrowserAnimationsModule,
+  ToastrModule.forRoot()
+];
 
 const providers = [];
 
