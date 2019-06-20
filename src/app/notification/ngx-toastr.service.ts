@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IndividualConfig, ToastrService } from 'ngx-toastr';
-import { Message } from './message.model';
+import { Notification } from './notification.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,21 +14,21 @@ export class NgxToastrService {
     closeButton: true
   };
 
-  show(message: Message, type: string) {
-    /* this.toastr.show(message.message, '', this.individualConfig, type); */
+  show(notification: Notification, type: string) {
+    /* this.toastr.show(notification.message, '', this.individualConfig, type); */
 
     switch (type) {
       case 'success':
-        this.toastr.success(message.message, '', this.individualConfig);
+        this.toastr.success(notification.message, '', this.individualConfig);
         break;
       case 'error':
-        this.toastr.error(message.message, '', this.individualConfig);
+        this.toastr.error(notification.message, '', this.individualConfig);
         break;
       case 'warning':
-        this.toastr.warning(message.message, '', this.individualConfig);
+        this.toastr.warning(notification.message, '', this.individualConfig);
         break;
       case 'info':
-        this.toastr.info(message.message, '', this.individualConfig);
+        this.toastr.info(notification.message, '', this.individualConfig);
         break;
     }
   }
