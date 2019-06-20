@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IndividualConfig, ToastrService } from 'ngx-toastr';
+import { Message } from './message.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class NgxToastrService {
     progressBar: true
   };
 
-  show(message, type) {
+  show(message: Message, type: string) {
     /* this.toastr.show(message.message, '', this.individualConfig, type); */
     switch (type) {
       case 'success':

@@ -14,7 +14,7 @@ const imports = [
   ToastrModule.forRoot()
 ];
 
-const providers = [];
+const providers: any = [];
 
 @NgModule({
   declarations: [...declarations],

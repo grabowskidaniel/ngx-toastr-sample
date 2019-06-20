@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Message } from './message.model';
 import { NgxToastrService } from './ngx-toastr.service';
 
 @Injectable({
@@ -7,19 +8,19 @@ import { NgxToastrService } from './ngx-toastr.service';
 export class NotificationService {
   constructor(private ngxToastrService: NgxToastrService) {}
 
-  success(message) {
+  success(message: Message) {
     this.ngxToastrService.show(message, 'success');
   }
 
-  error(message) {
+  error(message: Message) {
     this.ngxToastrService.show(message, 'error');
   }
 
-  warning(message) {
+  warning(message: Message) {
     this.ngxToastrService.show(message, 'warning');
   }
 
-  info(message) {
+  info(message: Message) {
     this.ngxToastrService.show(message, 'info');
   }
 }
