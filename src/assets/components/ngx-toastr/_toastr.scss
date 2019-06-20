@@ -48,6 +48,7 @@ button.toast-close-button {
 
 .toast-message {
   @extend .toast-text-defaults;
+
   padding-top: 5px;
 }
 
@@ -76,12 +77,14 @@ button.toast-close-button {
 
   & .toast-progress {
     @extend .toast-progress-defaults;
+
     background-color: #018ef0;
   }
 }
 
 .toast-info::before {
   @extend .toast-before-defaults;
+
   content: '\f05a';
   font-family: FontAwesome;
   left: 20px;
@@ -95,12 +98,14 @@ button.toast-close-button {
 
   & .toast-progress {
     @extend .toast-progress-defaults;
+
     background-color: #cc4148;
   }
 }
 
 .toast-error::before {
   @extend .toast-before-defaults;
+
   content: '\f057';
   font-family: FontAwesome;
   left: 20px;
@@ -114,12 +119,14 @@ button.toast-close-button {
 
   & .toast-progress {
     @extend .toast-progress-defaults;
+
     background-color: #2bac57;
   }
 }
 
 .toast-success::before {
   @extend .toast-before-defaults;
+
   content: '\f058';
   font-family: FontAwesome;
   left: 20px;
@@ -133,12 +140,14 @@ button.toast-close-button {
 
   & .toast-progress {
     @extend .toast-progress-defaults;
+
     background-color: #f49200;
   }
 }
 
 .toast-warning::before {
   @extend .toast-before-defaults;
+
   content: '\f071';
   font-family: FontAwesome;
   left: 20px;
