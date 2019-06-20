@@ -2,22 +2,24 @@ button.toast-close-button {
   /* transform: translateY(50%); */
 }
 
-.toast-container.toast-top-full-width .ngx-toastr {
+/* .toast-container.toast-top-full-width .ngx-toastr {
   display: flex;
   align-items: center;
-}
+} */
 
 .toast-container .ngx-toastr {
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0 5px 10px 0 rgba(110, 127, 139, 0.3);
   padding-top: 12px;
+  padding-left: 55px;
 }
 
 .toast-container .toast-close-button {
   color: #6e7f8b;
   font-size: 23px;
   font-weight: 500;
+  right: 0;
   top: 0;
 }
 
