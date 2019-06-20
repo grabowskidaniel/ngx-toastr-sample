@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+import { IndividualConfig, ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,26 @@ import { ToastrService } from 'ngx-toastr';
 export class NgxToastrService {
   constructor(private toastr: ToastrService) {}
 
-  show() {
-    this.toastr.success('Hello world!', 'Toastr fun!');
+  individualConfig: Partial<IndividualConfig> = {
+    positionClass: 'toast-top-full-width',
+    progressBar: true
+  };
+
+  show(message, type) {
+    /* this.toastr.show(message.message, '', this.individualConfig, type); */
+    switch (type) {
+      case 'success':
+        this.toastr.success(message.message, '', this.individualConfig);
+        break;
+      case 'error':
+        this.toastr.error(message.message, '', this.individualConfig);
+        break;
+      case 'warning':
+        this.toastr.warning(message.message, '', this.individualConfig);
+        break;
+      case 'info':
+        this.toastr.info(message.message, '', this.individualConfig);
+        break;
+    }
   }
 }
