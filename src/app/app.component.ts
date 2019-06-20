@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotificationService } from './notification.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: []
 })
 export class AppComponent {
-  title = 'angular-prettier-lint-sample';
+  constructor(private notificationService: NotificationService) {}
+
+  openToastr(): void {
+    this.notificationService.show();
+  }
 }
