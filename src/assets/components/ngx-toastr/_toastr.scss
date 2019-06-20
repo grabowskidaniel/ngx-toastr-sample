@@ -1,0 +1,146 @@
+button.toast-close-button {
+  /* transform: translateY(50%); */
+}
+
+.toast-container.toast-top-full-width .ngx-toastr {
+  display: flex;
+  align-items: center;
+}
+
+.toast-container .ngx-toastr {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px 0 rgba(110, 127, 139, 0.3);
+  padding-top: 12px;
+}
+
+.toast-container .toast-close-button {
+  color: #6e7f8b;
+  font-size: 23px;
+  font-weight: 500;
+  top: 0;
+}
+
+.toast-container .ngx-toastr:hover {
+  box-shadow: 0 0 12px rgba(110, 127, 139, 0.3);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.toast-progress {
+  background-color: yellow;
+}
+
+.toast-top-full-width {
+  top: 5px;
+}
+
+.toast-text-defaults {
+  font-weight: normal;
+  color: #19465f;
+}
+
+.toast-title {
+  @extend .toast-text-defaults;
+}
+
+.toast-message {
+  @extend .toast-text-defaults;
+  padding-top: 5px;
+}
+
+.toast-message a,
+.toast-message label {
+  @extend .toast-text-defaults;
+}
+
+.toast-defaults {
+  position: relative;
+  background-image: none;
+}
+
+.toast-before-defaults {
+  /* transform: translateY(50%); */
+}
+
+.toast-progress-defaults {
+  height: 2px;
+  border-radius: 6px;
+  opacity: unset;
+}
+
+.toast-info {
+  @extend .toast-defaults;
+
+  & .toast-progress {
+    @extend .toast-progress-defaults;
+    background-color: #018ef0;
+  }
+}
+
+.toast-info::before {
+  @extend .toast-before-defaults;
+  content: '\f05a';
+  font-family: FontAwesome;
+  left: 20px;
+  position: absolute;
+  font-size: 24px;
+  color: #018ef0;
+}
+
+.toast-error {
+  @extend .toast-defaults;
+
+  & .toast-progress {
+    @extend .toast-progress-defaults;
+    background-color: #cc4148;
+  }
+}
+
+.toast-error::before {
+  @extend .toast-before-defaults;
+  content: '\f057';
+  font-family: FontAwesome;
+  left: 20px;
+  position: absolute;
+  font-size: 24px;
+  color: #cc4148;
+}
+
+.toast-success {
+  @extend .toast-defaults;
+
+  & .toast-progress {
+    @extend .toast-progress-defaults;
+    background-color: #2bac57;
+  }
+}
+
+.toast-success::before {
+  @extend .toast-before-defaults;
+  content: '\f058';
+  font-family: FontAwesome;
+  left: 20px;
+  position: absolute;
+  font-size: 24px;
+  color: #2bac57;
+}
+
+.toast-warning {
+  @extend .toast-defaults;
+
+  & .toast-progress {
+    @extend .toast-progress-defaults;
+    background-color: #f49200;
+  }
+}
+
+.toast-warning::before {
+  @extend .toast-before-defaults;
+  content: '\f071';
+  font-family: FontAwesome;
+  left: 20px;
+  position: absolute;
+  font-size: 24px;
+  color: #f49200;
+}

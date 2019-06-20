@@ -11,10 +11,24 @@ export class NgxToastrService {
   individualConfig: Partial<IndividualConfig> = {
     positionClass: 'toast-top-full-width',
     progressBar: true,
-    closeButton: true
+    closeButton: true,
+    disableTimeOut: true,
+    enableHtml: true
   };
 
   show(notification: Notification, type: string) {
-    this.toastr.show(notification.message, '', this.individualConfig, type);
+    this.toastr.show(
+      notification.message + ' <b>negrito</b> sem negrito.',
+      '',
+      this.individualConfig,
+      type
+    );
+    this.toastr.show(
+      notification.message +
+        ' <b>negrito</b> sem negrito. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      '',
+      this.individualConfig,
+      type
+    );
   }
 }
