@@ -10,11 +10,13 @@ export class NgxToastrService {
 
   individualConfig: Partial<IndividualConfig> = {
     positionClass: 'toast-top-full-width',
-    progressBar: true
+    progressBar: true,
+    closeButton: true
   };
 
   show(message: Message, type: string) {
     /* this.toastr.show(message.message, '', this.individualConfig, type); */
+
     switch (type) {
       case 'success':
         this.toastr.success(message.message, '', this.individualConfig);

@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-prettier-lint-sample'`, () => {
+  it(`should have as title 'exemplo-ngx-toastr'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-prettier-lint-sample');
+    expect(app.title).toEqual('exemplo-ngx-toastr');
   });
 
   it('should render title in a h1 tag', () => {
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain(
-      'Welcome to angular-prettier-lint-sample!'
+      'Welcome to exemplo-ngx-toastr!'
     );
   });
 });
