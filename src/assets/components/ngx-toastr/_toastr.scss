@@ -75,7 +75,7 @@
 
 .toast-info::before {
   content: '\f05a';
-  font-family: FontAwesome;
+  font-family: FontAwesome, Arial, Helvetica, sans-serif;
   left: 20px;
   position: absolute;
   font-size: 24px;
@@ -94,7 +94,7 @@
 
 .toast-error::before {
   content: '\f057';
-  font-family: FontAwesome;
+  font-family: FontAwesome, Arial, Helvetica, sans-serif;
   left: 20px;
   position: absolute;
   font-size: 24px;
@@ -113,7 +113,7 @@
 
 .toast-success::before {
   content: '\f058';
-  font-family: FontAwesome;
+  font-family: FontAwesome, Arial, Helvetica, sans-serif;
   left: 20px;
   position: absolute;
   font-size: 24px;
@@ -132,7 +132,7 @@
 
 .toast-warning::before {
   content: '\f071';
-  font-family: FontAwesome;
+  font-family: FontAwesome, Arial, Helvetica, sans-serif;
   left: 20px;
   position: absolute;
   font-size: 24px;

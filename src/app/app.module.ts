@@ -11,7 +11,10 @@ const imports = [
   CommonModule,
   BrowserModule,
   BrowserAnimationsModule,
-  ToastrModule.forRoot()
+  ToastrModule.forRoot({
+    maxOpened: 1,
+    preventDuplicates: true
+  })
 ];
 
 const providers: any = [];

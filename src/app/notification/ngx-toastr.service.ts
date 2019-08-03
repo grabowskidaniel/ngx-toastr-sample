@@ -24,12 +24,5 @@ export class NgxToastrService {
       this.individualConfig,
       type
     );
-    this.toastr.show(
-      notification.message +
-        ' <b>negrito</b> sem negrito. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      '',
-      this.individualConfig,
-      type
-    );
   }
 }
